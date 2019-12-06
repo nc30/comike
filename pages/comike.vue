@@ -12,7 +12,9 @@
 荷物に貼ります。<br/>
 プリンターがなければセブンプリントとか使えばいいです。
         </p>
-        <input type="button" class="button" value="印刷する" onclick="window.print();" />
+        <div class="c">
+          <button class="btn" onClick="window.print()" >印刷する</button>
+        </div>
       </div>
     </div>
     <MainArea

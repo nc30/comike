@@ -76,7 +76,7 @@ export default {
       this.update('hall', this.direction + this.direction_num)
     },
     _state: function() {
-      this.update('state', this.desk + ' - ' + this.desk_number + this.desk_position)
+      this.update('state', this.desk + '-' + this.desk_number + this.desk_position)
     },
     update: function(key, value) {
       this.value[key] = value
