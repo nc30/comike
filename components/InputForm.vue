@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c">
     <div class="row">
       Day
     </div>
@@ -33,10 +33,12 @@
         </select>
       </div>
     </div>
+    <div class="row">
+      配置場所
+    </div>
 
     <div class="row">
       <div class="3 col">
-        配置場所
         <input class="card w-100" type="text" v-model="desk" @change="_state" />
       </div>
       <div class="3 col">
@@ -68,8 +70,8 @@ export default {
   	return {
   		direction: '西',
   		direction_num: 1,
-  		desk: 'あ',
-  		desk_number: 1,
+  		desk: 'P',
+  		desk_number: 27,
   		desk_position: "a"
   	}
   },
@@ -78,7 +80,7 @@ export default {
   	  this.update('hall', this.direction + this.direction_num)
   	},
   	_state: function() {
-  	  this.update('state', this.desk + '-' + this.desk_number + this.desk_position)
+  	  this.update('state', this.desk + ' - ' + this.desk_number + this.desk_position)
   	},
   	update: function(key, value) {
   	  this.value[key] = value

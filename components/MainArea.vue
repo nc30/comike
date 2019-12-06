@@ -126,6 +126,7 @@ export default {
     font-family: 'Kosugi Maru', sans-serif;
     background-color: #fff;
     padding: .1em;
+    margin: .1em 0;
   }
 }
 
@@ -134,16 +135,16 @@ export default {
 }
 
 .green {
-  background-color: #03b509;
+  background-color: #14b554;
 }
 .orange {
   background-color: orange;
 }
 .purple {
-  background-color: #dd00e0;
+  background-color: #cf2fe2;
 }
 .blue {
-  background-color: #1900ea;
+  background-color: #3f31b5;
 }
 ._circle_name {
   background-color: #fff;
