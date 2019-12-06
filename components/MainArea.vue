@@ -14,7 +14,7 @@
         </div>
         <div class="inbox"></div>
         <div class="box hall">
-          <label>参加ホール</label>
+          <label>配置ホール</label>
           <div class="_inbox"><span class="__main">{{info.hall}}</span></div>
         </div>
       </div>
@@ -25,10 +25,6 @@
       <div class="box circle">
         <label>サークル名</label>
         <div class="_inbox">{{ info.circle }}</div>
-      </div>
-      <div class="box name">
-        <label>代表者名</label>
-        <div class="_inbox"><span>{{ info.name }}</span></div>
       </div>
     </div>
   </div>
@@ -86,6 +82,7 @@ export default {
   }
   .__level {
     font-size: 2em;
+    padding-left: .5em;
   }
 }
 .hall {
@@ -101,13 +98,13 @@ export default {
 }
 .state {
   ._inbox {
-    padding: 2em 5em;
+    padding: 2em 0em;
     text-align: center;
   }
   .__main {
-    font-size: 10em;
+    font-size: 12em;
   }
-  margin-bottom: .5em;
+  margin-bottom: 1em;
 }
 
 .circle, .name {
@@ -125,13 +122,13 @@ export default {
   ._inbox {
     font-family: 'Kosugi Maru', sans-serif;
     background-color: #fff;
-    padding: .1em;
+    padding: .2em;
     margin: .1em 0;
   }
 }
 
 .container > div {
-  padding: 1em 3em 0em 3em;
+  padding: 1.5em 3em 0em 3em;
 }
 
 .green {

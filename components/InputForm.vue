@@ -1,7 +1,7 @@
 <template>
   <div class="c">
     <div class="row">
-      Day
+      参加日
     </div>
     <div class="row">
       <div class="6 col">
@@ -15,7 +15,7 @@
     </div>
 
     <div class="row">
-      ホール
+      配置ホール
     </div>
     <div class="row">
       <div class="6 col">
@@ -55,10 +55,6 @@
     <div class="row">
       サークル名
       <input class="card w-100" type="text" placeholder="Circle Name" :value="value.circle" @input="update('circle', $event.target.value)" />
-    </div>
-    <div class="row">
-      代表者名
-      <input class="card w-100" type="text" placeholder="代表者名" :value="value.name" @input="update('name', $event.target.value)" />
     </div>
   </div>
 </template>

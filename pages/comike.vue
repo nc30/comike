@@ -9,7 +9,8 @@
         <h2></h2>
         <p>自分のサークルの日時、ホール、サークル名などを入力します。<br/>
 このページをB5サイズで印刷します。<br/>
-荷物に貼ります。
+荷物に貼ります。<br/>
+プリンターがなければセブンプリントとか使えばいいです。
         </p>
         <input type="button" class="button" value="印刷する" onclick="window.print();" />
       </div>
@@ -22,6 +23,7 @@
       :info="circleinfo"
       class="sub"
     />
+    <div class="sub comment"><p>B5で印刷してね</p></div>
     <InputForm
       v-model="circleinfo"
       class="out"
@@ -44,7 +46,6 @@ export default {
         circle: "サテライトナゴヤ",
         day: 2,
         hall: "西4",
-        name: "背後",
         state: "P-27a",
       }
     }
@@ -57,5 +58,9 @@ export default {
 <style lang="scss">
 .cent {
   margin: auto auto;
+}
+.comment{
+  width: 100%;
+  text-align: center;
 }
 </style>
