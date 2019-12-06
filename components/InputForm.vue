@@ -63,25 +63,25 @@
 export default {
   props: ['value'],
   data: function() {
-  	return {
-  		direction: '西',
-  		direction_num: 1,
-  		desk: 'P',
-  		desk_number: 27,
-  		desk_position: "a"
-  	}
+    return {
+      direction: '西',
+      direction_num: 1,
+      desk: 'P',
+      desk_number: 27,
+      desk_position: "a"
+    }
   },
   methods: {
-  	_hall: function() {
-  	  this.update('hall', this.direction + this.direction_num)
-  	},
-  	_state: function() {
-  	  this.update('state', this.desk + ' - ' + this.desk_number + this.desk_position)
-  	},
-  	update: function(key, value) {
-  	  this.value[key] = value
-  	  this.$emit('input', this.value)
-  	}
+    _hall: function() {
+      this.update('hall', this.direction + this.direction_num)
+    },
+    _state: function() {
+      this.update('state', this.desk + ' - ' + this.desk_number + this.desk_position)
+    },
+    update: function(key, value) {
+      this.value[key] = value
+      this.$emit('input', this.value)
+    }
   }
 }
 </script>
