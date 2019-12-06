@@ -111,8 +111,8 @@ export default {
 }
 
 .circle, .name {
-
   ._inbox {
+    min-height: 1.2em;
     text-align: center;
     font-size: 2em;
   }
@@ -134,16 +134,16 @@ export default {
 }
 
 .green {
-  background-color: green;
+  background-color: #03b509;
 }
 .orange {
   background-color: orange;
 }
 .purple {
-  background-color: purple;
+  background-color: #dd00e0;
 }
 .blue {
-  background-color: blue;
+  background-color: #1900ea;
 }
 ._circle_name {
   background-color: #fff;
