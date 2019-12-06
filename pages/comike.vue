@@ -30,17 +30,22 @@
       v-model="circleinfo"
       class="out"
     />
+    <footer class="c out">
+      <a href="https://github.com/nc30/comike" class="github_link"><github/></a>
+    </footer>
   </div>
 </template>
 
 <script>
 import MainArea from '~/components/MainArea'
 import InputForm from '~/components/InputForm'
+import github from '~/components/github'
 
 export default {
   components: {
     MainArea,
-    InputForm
+    InputForm,
+    github
   },
   data: function() {
     return {
@@ -61,8 +66,14 @@ export default {
 .cent {
   margin: auto auto;
 }
-.comment{
+.comment {
   width: 100%;
+  text-align: center;
+}
+.github_link svg {
+  fill: #24292e;
+}
+footer {
   text-align: center;
 }
 </style>
