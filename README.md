@@ -1,6 +1,6 @@
 # comike
 
-> My tremendous Nuxt.js project
+> コミケの送り状を発行するwebサービス
 
 ## Build Setup
 
